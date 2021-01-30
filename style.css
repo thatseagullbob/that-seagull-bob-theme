@@ -52,19 +52,6 @@ h3 {
   font-size: 2em;
 }
 
-.flex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.container {
-  max-width: 832px;
-  padding: 0 1em;
-  margin: 0 auto;
-}
-
 h3.animated-h3-border {
   min-width: 100%;
   transition: min-width 1s;
@@ -107,7 +94,7 @@ input[type="submit"]:hover,
 
 /* Splash Screen */
 
-.splash{
+body{
   /* padding: 2rem 0; */
   color: #fff;
   text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.6);

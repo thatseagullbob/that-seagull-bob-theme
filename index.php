@@ -22,7 +22,7 @@
 	<body>
 		<?php get_header(); ?>
 
-		<main>
+		<main class="container">
 			<p>This is the main section</p>
 		</main>
 
