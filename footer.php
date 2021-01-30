@@ -3,7 +3,7 @@
 /* Theme Footer
 /* ------------------------------------------------------------------------ */
 ?>
-<footer class="fixed-bottom">
+<footer>
     <div class="container">
         <div class="row">
             <div class="col">

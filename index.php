@@ -23,7 +23,7 @@
 		<?php get_header(); ?>
 
 		<main class="container">
-			<p>This is the main section</p>
+			<!-- <p>This is the main section</p> -->
 		</main>
 
 		<?php get_footer(); ?>
