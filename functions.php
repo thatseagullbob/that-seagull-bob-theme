@@ -44,4 +44,15 @@ function tsb_admin_bar_render() {
   add_action( 'wp_before_admin_bar_render', 'tsb_admin_bar_render' );
 
 
+/* ------------------------------------------------------------------------ */
+/* Misc Admin stuff                                                         */
+/* ------------------------------------------------------------------------ */
+
+// Add custom footer to the admin area
+function TSB_modify_footer_admin () {
+	echo 'Developed by <a href="https://tonyedwardspz.co.uk">Tony Edwards</a> | ';
+	echo 'For <a href="https://thatseagullbob.co.uk">That Seagull Bob</a> | ';
+}
+add_filter('admin_footer_text', 'TSB_modify_footer_admin');
+
 ?>
