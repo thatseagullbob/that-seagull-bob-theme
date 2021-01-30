@@ -7,7 +7,7 @@
 <header class="container min-vh-100">
     <div class="row">
         <div class="col col-sm-8 offset-sm-2 col-md-6 offset-sm-3">
-            <img class="img-fluid" src="https://thatseagullbob.co.uk/wp-content/uploads/2020/10/logo.png" alt="That Seagull Bob Logo">
+            <img class="img-fluid" src="https://thatseagullbob.co.uk/wp-content/uploads/2020/10/logo.png" alt="That Seagull Bob Logo" loading="eager" width="636" height="557">
         </div>
     </div>
 
