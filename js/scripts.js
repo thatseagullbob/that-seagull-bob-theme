@@ -1,6 +1,6 @@
 /* jshint latedef:nofunc */
 
-var app = {
+let app = {
 
 };
 

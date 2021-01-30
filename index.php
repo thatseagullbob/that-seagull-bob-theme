@@ -72,5 +72,7 @@
 				<p>Company no: 11844082<br /><a href="https://ecologi.com/thatseagullbob" title="Ecologi Tree Planting">Visit our forest</a></p>
 			</div>
 		</footer>
+
+		<?php wp_footer() ?>
 	</body>
 </html>
