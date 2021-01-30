@@ -1,0 +1,308 @@
+/*  
+Theme Name: That Seagull Bob
+Theme URI: https://thatseagullbob.co.uk
+Description: The base them for the That Seagull Bob website
+Version: 1.0.0
+Author: Tony Edwards
+Author URI: https://tonyedwardspz.co.uk
+License:
+License URI:
+*/
+
+
+/* Google Font - Montserrat - https://fonts.googleapis.com/css?family=Montserrat */
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v7/zhcz-_WihjSQC0oHJ9TCYAzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+  font-display: swap;
+}
+
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+progress,sub,sup{vertical-align:baseline}button,hr,input{overflow:visible}html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0} figcaption, menu,article,aside,details,figure,footer,header,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0} [hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{}button,select{text-transform:none}[type=submit], [type=reset],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+
+
+/* Global */
+
+body {
+  overflow-x: hidden;
+  font-family: 'Montserrat', -apple-system, ".SFNSText-Regular", "San Francisco","Oxygen", "Ubuntu", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  line-height: 1.8em;
+}
+
+h2 {
+  z-index: 2;
+  margin-top: 50px;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 4em;
+  font-size: 2em;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container {
+  max-width: 832px;
+  padding: 0 1em;
+  margin: 0 auto;
+}
+
+h3.animated-h3-border {
+  min-width: 100%;
+  transition: min-width 1s;
+  -webkit-transition: min-width 1s;
+}
+
+.button {
+  transition: background-color 0.7s ease;
+  transition: color 0.5s ease;
+  background-color: #F05821;
+  color: #fff;
+  border: 2px solid #F05821;
+  border-radius: 3px;
+  font-size: 1em;
+  text-decoration: none;
+  padding: 1em 4em;
+  display: inline-flex;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: none;
+  cursor: pointer;
+  min-height: 18px;
+}
+
+button:hover,
+input[type="submit"]:hover,
+.button:hover {
+  color: #fff;
+  transition: color 0.3s ease;
+  border: 2px solid #F899B9;
+  transition: border 0.3s ease;
+}
+
+@media screen and (max-width: 600px) {
+  h3 {
+    margin-top: 2em;
+  }
+}
+
+
+/* Splash Screen */
+
+.splash{
+  /* padding: 2rem 0; */
+  color: #fff;
+  text-shadow: 0px 1px 6px rgba(0, 0, 0, 0.6);
+  height: 500px;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  z-index: 2;
+  background: rgb(142,210,239);
+  background: linear-gradient(180deg, rgba(142,210,239,1) 0%, rgba(142,210,239,1) 55%, rgba(248,188,186,1) 100%);
+}
+
+
+.splash h3 {
+  font-size: 1.3em;
+  z-index: 2;
+  text-align: center;
+  margin-top: 0;
+  clear: both;
+}
+
+.cover {
+  padding: 2rem 0;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #1A1A1A;
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+.logo {
+  max-width: 500px;
+  height: auto;
+  margin-top: -60px;
+}
+
+.logo::after {
+  clear: both;
+}
+
+@media all and (max-width: 800px) {
+    .logo {
+      height: 350px;
+      width: 350px;
+    }
+}
+
+.social {
+  margin-top: 3em;
+}
+
+.social a{
+  color: #fff;
+  font-size: 40px;
+  padding: 12px;
+  line-height: 60px;
+  text-decoration: none;
+  text-shadow: none;
+  transition: color 0.6s ease;
+}
+
+.social ul{
+  margin-left: 0;
+  padding-left: 0;
+  margin-right: -20px;
+}
+
+.social li{
+  display: inline-block;
+  height:60px;
+  width:60px;
+  transition: background-color 0.7s ease;
+  transition: background 0.7s ease;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.social li a:before {
+  font-family: FontAwesome;
+}
+
+.social li a:hover {
+  transition: color 0.5s ease;
+  transition: background-color 0.5s ease;
+  transition: background 0.5s ease;
+  color: #fff;
+}
+
+.social li:hover a{
+  /* transition: color 0.5s ease; */
+  transition: background-color 0.5s ease;
+  transition: background 0.5s ease;
+  /* color: #fff; */
+}
+
+.twitter:hover{
+  background-color: #00aced;
+}
+
+.facebook:hover{
+  background-color: #3b5998;
+}
+
+.youtube:hover {
+  background-color: #ff0000;
+}
+
+.instagram:hover{
+  background-color: #d92e7f;
+}
+
+.social li:hover svg {
+  transition: fill 0.5s ease;
+  fill: white;
+}
+
+.social li svg {
+  transition: fill 0.7s ease;
+  fill: #F05821;
+}
+
+a.social-facebook{
+  padding-left: 17px;
+}
+
+a.social-facebook svg{
+  margin-left: -7px;
+}
+
+a.social-youtube svg{
+  margin-left: -2px;
+}
+
+a.social-instagram svg {
+  margin-left: -2px;
+}
+
+.social svg{
+  margin-top: 10px;
+}
+
+.twitter {
+  margin-left: -15px;
+}
+
+.facebook,
+.twitter,
+.youtube {
+  margin-right: 10px;
+}
+
+@media all and (max-width: 800px) {
+  .facebook,
+  .twitter {
+    margin-right: 10px;
+  }
+}
+
+.logo,
+.newsletter,
+.social {
+  z-index: 2;
+}
+
+
+/* Footer */
+
+footer {
+  background-color: #1A1A1A;
+}
+
+footer p {
+  width: 50%;
+  flex-grow: 1;
+  color: #fff;
+}
+
+footer p:last-of-type{
+  text-align: right;
+}
+
+footer a,
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active {
+  text-decoration: none;
+  color: white;
+}
