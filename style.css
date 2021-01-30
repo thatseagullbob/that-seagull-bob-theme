@@ -273,17 +273,13 @@ a.social-instagram svg {
 
 footer {
   background-color: #1A1A1A;
+  padding-top: 1em;
 }
 
 footer p {
-  width: 50%;
-  flex-grow: 1;
   color: #fff;
 }
 
-footer p:last-of-type{
-  text-align: right;
-}
 
 footer a,
 footer a:link,
